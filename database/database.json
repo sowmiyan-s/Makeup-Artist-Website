@@ -1,0 +1,285 @@
+{
+  "version": "2.0.0",
+  "generated_at": "2026-09-24T23:45:00+05:30",
+  "schema": {
+    "tables": [
+      "admin_users",
+      "site_content",
+      "services",
+      "callback_requests",
+      "completed_requests",
+      "gallery_items",
+      "testimonials"
+    ]
+  },
+  "site_content": {
+    "site_title": "Thilothana Makeup Artist | Luxury Bridal, HD & Celebrity Makeup Studio",
+    "brand_name": "Thilothana Makeup Artist",
+    "tagline": "Radiance • Artistry • Elegance",
+    "phone_number": "(+91) 7695826978",
+    "whatsapp_number": "917695826978",
+    "email_address": "thilothanamakeupartist05@gmail.com",
+    "studio_address": "Eachanari, Pollachi Main Road, Coimbatore, Tamil Nadu - 641021",
+    "instagram_url": "https://www.instagram.com/thilo__makeupartist?igsh=OGxuYXphMW81a3Zo",
+    "founder_name": "Thilothana",
+    "founder_role": "Owner & Certified Master Makeup Artist",
+    "founder_experience": "7+ Years & 500+ Brides Transformed",
+    "founder_bio": "I am Thilothana, a certified master makeup artist based in Coimbatore. Specializing in customized looks for brides, celebrities, and special celebrations, my philosophy focuses on enhancing your natural facial contours, celebrating individual beauty, and delivering an unforgettable luxury experience."
+  },
+  "admin_users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password_hash": "admin123",
+      "full_name": "Thilothana",
+      "email": "thilothanamakeupartist05@gmail.com",
+      "role": "Super Admin"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "title": "Bridal & Muhurtham Artistry",
+      "category": "Bridal",
+      "price_estimate": "₹12,000 - ₹25,000",
+      "duration": "3.5 Hours",
+      "image": "images/girl1.png",
+      "badge": "Signature",
+      "description": "Exquisite South & North Indian bridal makeup with high-grade waterproof formulations, temple jewelry coordination, and flawless saree draping.",
+      "features": [
+        "Sweat-Proof & Tear-Resistant HD Finish",
+        "Full Saree Draping & Box Pleating",
+        "Lashes, Lenses & Hair Floral Architecture",
+        "Pre-Bridal Skin Consultation & Touch-up Kit"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Reception & Party Glam",
+      "category": "Reception",
+      "price_estimate": "₹6,000 - ₹12,000",
+      "duration": "2 Hours",
+      "image": "images/girl2.png",
+      "badge": "Popular",
+      "description": "High-glamour evening transformation with dramatic smokey eyes, winged precision, high-beam glow, and modern textured hairstyles.",
+      "features": [
+        "Precision Winged & Sultry Smokey Eyes",
+        "Long-Wear Velvet Base & Sculpting",
+        "International Red Carpet Trends",
+        "Customized Lip & Highlighter Harmony"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Pro HD & Celebrity Glass Skin",
+      "category": "HD Look",
+      "price_estimate": "₹7,500 - ₹15,000",
+      "duration": "2.5 Hours",
+      "image": "images/girl3.png",
+      "badge": "Trending",
+      "description": "Weightless, hyper-radiant 4K camera-ready makeup that mimics healthy dewy skin without cakeyness under harsh studio lighting.",
+      "features": [
+        "4K Flash & Camera Proof Texture",
+        "Infused with Luxury Hydrating Serums",
+        "Natural Micro-Blending Technique",
+        "Feathered Brow Architecture"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Maternity & Baby Shower",
+      "category": "Celebration",
+      "price_estimate": "₹5,000 - ₹9,000",
+      "duration": "2 Hours",
+      "image": "images/gallery/beauty-03.jpg",
+      "badge": "Gentle",
+      "description": "Gentle, pregnancy-safe makeup formulations designed to highlight the expectant mother's natural glow for maternity photoshoots.",
+      "features": [
+        "100% Safe, Hypoallergenic Formulations",
+        "Soft Romantic Hairstyle with Fresh Blooms",
+        "Comfortable On-Location Application",
+        "Natural Photo-Optimized Finish"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Engagement & Pre-Wedding",
+      "category": "Bridal",
+      "price_estimate": "₹8,000 - ₹14,000",
+      "duration": "2.5 Hours",
+      "image": "images/gallery/bridal-02.jpg",
+      "badge": "Romantic",
+      "description": "Vibrant and romantic makeup harmonized with your designer lehenga or pastel gown for unforgettable couple portraits.",
+      "features": [
+        "Palette Customized to Outfit Hues",
+        "All-Weather Sweat Resistance",
+        "Contemporary Floral Crown Styling",
+        "Flawless Outdoor Photography Ready"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Hairstyling & Saree Draping",
+      "category": "Styling",
+      "price_estimate": "₹2,500 - ₹5,000",
+      "duration": "1.5 Hours",
+      "image": "images/gallary/extra-01.jpg",
+      "badge": "Styling",
+      "description": "Traditional South Indian poolajada braid decoration, modern messy buns, Hollywood waves, and pin-sharp saree pleating.",
+      "features": [
+        "South Indian Poolajada & Flower Decor",
+        "Messy Textured Buns & Glam Waves",
+        "Perfect Box Fold Saree Pleating",
+        "Ironing & Pre-Pleating Support"
+      ]
+    }
+  ],
+  "gallery_items": [
+    {
+      "id": 1,
+      "title": "Royal Muhurtham South Indian Bride",
+      "category": "bridal",
+      "image": "images/girl1.png",
+      "caption": "Traditional South Indian Muhurtham bride with antique temple jewelry, jasmine flowers, and waterproof glowing HD makeup."
+    },
+    {
+      "id": 2,
+      "title": "Evening Reception Smokey Glam",
+      "category": "party",
+      "image": "images/girl2.png",
+      "caption": "Emerald & gold reception cocktail look featuring precision feline eyeliner, sultry smokey tones, and champagne highlighter."
+    },
+    {
+      "id": 3,
+      "title": "Luminous Korean-Inspired Glass Skin",
+      "category": "hd",
+      "image": "images/girl3.png",
+      "caption": "Celebrity glass skin editorial makeup with fresh peach tones and feathered natural brow definition."
+    },
+    {
+      "id": 4,
+      "title": "Contemporary Pastel Bride",
+      "category": "bridal",
+      "image": "images/gallery/bridal-02.jpg",
+      "caption": "Modern pastel lehenga bride with soft romantic curls, baby's breath blossoms, and velvet rose lips."
+    },
+    {
+      "id": 5,
+      "title": "Natural Radiant Maternity Glow",
+      "category": "natural",
+      "image": "images/gallery/beauty-03.jpg",
+      "caption": "Gentle photoshoot look designed to accentuate natural mother-to-be radiance."
+    },
+    {
+      "id": 6,
+      "title": "High-Definition Editorial Beauty",
+      "category": "hd",
+      "image": "images/gallery/beauty-04.jpg",
+      "caption": "Studio photoshoot makeup with sculpted bone structure and defined satin lip finish."
+    },
+    {
+      "id": 7,
+      "title": "Traditional Poolajada Braided Hair",
+      "category": "hair",
+      "image": "images/gallary/extra-01.jpg",
+      "caption": "Intricately woven South Indian bridal braid ornamented with fresh blooms and antique gold billai."
+    },
+    {
+      "id": 8,
+      "title": "Modern Textured Bun & Saree Drape",
+      "category": "hair",
+      "image": "images/gallary/extra-02.jpg",
+      "caption": "Modern textured updo accessorized with pearls and crisp box-pleated Kanchipuram silk saree."
+    }
+  ],
+  "callback_requests": [
+    {
+      "id": 1,
+      "name": "Priya Dharshini",
+      "phone": "9840123456",
+      "category": "Bridal MakeUp",
+      "address": "RS Puram, Coimbatore",
+      "event_date": "2026-10-15",
+      "description": "Looking for Muhurtham bridal makeup, saree draping and floral hairstyle for my morning wedding at Codissia hall.",
+      "submitted_at": "2026-09-22 10:15:00",
+      "status": "Pending",
+      "admin_notes": "Followed up on WhatsApp. Sent bridal portfolio brochure."
+    },
+    {
+      "id": 2,
+      "name": "Kavitha R",
+      "phone": "9789012345",
+      "category": "Reception MakeUp",
+      "address": "Saibaba Colony, Coimbatore",
+      "event_date": "2026-10-24",
+      "description": "Evening reception party makeup with smokey eye look and modern hair waves for 2 persons.",
+      "submitted_at": "2026-09-23 14:30:00",
+      "status": "Pending",
+      "admin_notes": "Preferred evening slot after 4 PM."
+    },
+    {
+      "id": 3,
+      "name": "Ananya Sundaram",
+      "phone": "9944112233",
+      "category": "Pro HD MakeUp",
+      "address": "Gandhipuram, Coimbatore",
+      "event_date": "2026-11-02",
+      "description": "Need Pro HD makeup for outdoor pre-wedding couple photoshoot.",
+      "submitted_at": "2026-09-24 09:00:00",
+      "status": "Pending",
+      "admin_notes": "Trial makeup scheduled for next Saturday."
+    }
+  ],
+  "completed_requests": [
+    {
+      "id": 1,
+      "original_request_id": 101,
+      "name": "Sneha Krishnan",
+      "phone": "9894001122",
+      "category": "Bridal MakeUp",
+      "address": "Peelamedu, Coimbatore",
+      "description": "Traditional Muhurtham makeup with temple gold jewelry set.",
+      "submitted_at": "2026-08-10 11:20:00",
+      "completed_at": "2026-08-16 13:00:00",
+      "feedback": "Thilothana made me look like a royal queen! Makeup stayed intact for 10+ hours in humid weather. 10/10!"
+    },
+    {
+      "id": 2,
+      "original_request_id": 102,
+      "name": "Divya Mohan",
+      "phone": "9786112244",
+      "category": "Glass Skin MakeUp",
+      "address": "Saravanampatti, Coimbatore",
+      "description": "Glass skin dewy makeup for sister wedding event.",
+      "submitted_at": "2026-08-18 16:45:00",
+      "completed_at": "2026-08-25 19:30:00",
+      "feedback": "Skin looked so glowing and natural, everyone asked who my makeup artist was."
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "client_name": "Nandhini Vijay",
+      "role": "Muhurtham Bride",
+      "rating": 5,
+      "review": "Thilothana is truly an artist! My bridal makeup was beyond expectations. It looked ultra-natural in person and sensational in all 4K wedding photos. Thank you so much!",
+      "location": "Coimbatore"
+    },
+    {
+      "id": 2,
+      "client_name": "Swetha Ramanathan",
+      "role": "Reception Glam",
+      "rating": 5,
+      "review": "Booking Thilothana was the best decision for my engagement and reception. Punctual, polite, and uses only high-end international makeup brands. 10/10 experience!",
+      "location": "Pollachi"
+    },
+    {
+      "id": 3,
+      "client_name": "Keerthana Prakash",
+      "role": "Baby Shower Look",
+      "rating": 5,
+      "review": "The gentlest and most flattering makeup artist in Coimbatore. She understood exactly what I wanted and made me feel so radiant during my ceremony.",
+      "location": "Tirupur"
+    }
+  ]
+}
