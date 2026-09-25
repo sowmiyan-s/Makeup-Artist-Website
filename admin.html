@@ -195,6 +195,49 @@
             background: #bc1939;
             color: #fff;
         }
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.25rem;
+                padding: 12px 14px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+                text-align: left;
+            }
+            .logout-btn {
+                position: static;
+                font-size: 0.82rem;
+                padding: 5px 12px;
+            }
+            form {
+                flex-direction: column;
+                padding: 14px 10px;
+            }
+            input[type="date"], select, input[type="text"], button[type="submit"] {
+                width: 100% !important;
+                min-width: 0 !important;
+            }
+            .nav-tabs {
+                flex-wrap: wrap;
+                padding: 8px;
+                gap: 6px;
+            }
+            .nav-tabs button {
+                flex: 1 1 calc(50% - 6px);
+                font-size: 0.85rem;
+                padding: 8px 10px;
+            }
+            .table-container {
+                padding: 0 10px;
+            }
+            .bottom-actions button {
+                width: 100%;
+                margin: 6px 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -441,5 +484,9 @@
             renderPending();
         });
     </script>
+
+    <footer style="text-align: center; padding: 25px 15px; margin-top: 40px; background: #141212; color: #8c827a; font-size: 13px; border-top: 2px solid #bc1939;">
+        <p style="margin: 0;">© 2025 <strong style="color: #e5ded7;">Thilothana Makeup Artist</strong> — Admin Control Panel | <a href="index.html" style="color: #bc1939; text-decoration: none;">Return to Website</a></p>
+    </footer>
 </body>
 </html>
