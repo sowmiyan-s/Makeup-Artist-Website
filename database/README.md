@@ -9,7 +9,7 @@ This directory contains the complete database schemas, data representations, and
    - Enables full offline, serverless, and static-hosting operation (GitHub Pages, Netlify, Vercel, or local file system) without requiring a PHP interpreter or MySQL server.
    - Contains all initial site text, service packages, portfolio items, testimonials, admin users, and sample callback/completed requests.
 
-2. **`schema.sql`** & **`../makeup_artist.sql`**:
+2. **`schema.sql`**:
    - Standard MySQL / MariaDB compatible relational database DDL and DML scripts.
    - Ready to import into phpMyAdmin, MySQL Workbench, or any cloud database (AWS RDS, PlanetScale, Supabase, etc.).
 
