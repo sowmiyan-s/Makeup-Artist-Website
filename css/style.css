@@ -248,7 +248,7 @@ button {
 .loader_bg {
      position: fixed;
      z-index: 9999999;
-     background: #fff;
+     background: radial-gradient(circle at center, #2e111b 0%, #15060c 100%);
      width: 100%;
      height: 100%;
 }
@@ -262,10 +262,6 @@ button {
      display: flex;
      justify-content: center;
      align-items: center;
-}
-
-.loader img {
-     width: 280px;
 }
 
 ul.btn {
@@ -521,7 +517,7 @@ ul.email li a:hover i {
 .text-bg figure img {
      width: 100%;
      padding-top: 70px;
-     padding-left: 40px;
+     padding-left: 0;
 }
 
 .text_img figure {

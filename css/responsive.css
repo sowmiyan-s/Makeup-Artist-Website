@@ -270,13 +270,40 @@ img {
 
     .text-bg a {
         font-size: 14px;
-        padding: 10px 20px;
+        padding: 10px 22px;
         margin: 5px 4px;
-        max-width: 140px;
+        max-width: none;
+        display: inline-block;
+        white-space: nowrap;
+    }
+
+    .text_img {
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .text_img figure {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
     }
 
     .text_img figure img {
-        max-height: 290px;
+        max-height: clamp(260px, 46vh, 320px);
+        width: auto !important;
+        max-width: 85% !important;
+        margin: 15px auto 0 !important;
+        padding: 0 !important;
+        display: block !important;
+        object-fit: contain !important;
+        object-position: bottom center !important;
     }
 
     #banner1 a.carousel-control-prev,
@@ -467,14 +494,21 @@ img {
     }
 
     .text-bg a {
-        max-width: 125px;
-        padding: 9px 12px;
-        font-size: 13px;
-        margin: 4px 3px;
+        max-width: none;
+        padding: 9px 16px;
+        font-size: 13.5px;
+        margin: 4px 4px;
+        white-space: nowrap;
+        display: inline-block;
     }
 
     .text_img figure img {
-        max-height: 240px;
+        max-height: 280px !important;
+        width: auto !important;
+        max-width: 85% !important;
+        margin: 10px auto 0 !important;
+        padding: 0 !important;
+        display: block !important;
     }
 
     /* Hide carousel arrows on tiny screens to maximize content viewing */

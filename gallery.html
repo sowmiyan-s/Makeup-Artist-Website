@@ -8,45 +8,50 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- site metas -->
       <title>Makeup Artist - Gallery</title>
-   
-      <!-- Basic Meta Tags for SEO -->
       <meta name="description" content="Thilothana Makeup Artist - Professional and affordable makeup services for all occasions, ensuring satisfaction and customized beauty.">
       <meta name="keywords" content="makeup artist, bridal makeup, professional makeup, HD makeup, affordable makeup, celebrity makeup, party makeup, Thilothana">
       <meta name="author" content="Thilothana">
-      <meta property="og:title" content="Thilothana Makeup Artist">
-      <meta property="og:description" content="Professional and affordable makeup services for brides, celebrities, and everyday individuals looking to enhance their natural beauty.">
-      <meta property="og:image" content="images/ads.jpg">
-      <meta property="og:url" content="https://thilothanamakeupartist.in">
-      <meta property="og:type" content="website">
-      <link rel="icon" href="images/fav.png" type="images/fav.png">
-      
+
+      <!-- Google Fonts: Past font Poppins -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+      <!-- bootstrap css -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <!-- style css -->
       <link rel="stylesheet" href="css/style.css">
       <!-- Responsive-->
       <link rel="stylesheet" href="css/responsive.css">
+      <!-- Luxury Indian Theme -->
+      <link rel="stylesheet" href="css/luxury-theme.css">
       <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <link rel="icon" href="images/fav.png" type="image/png">
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-      <!-- Tweaks for older IEs-->
       <!-- Font Awesome CSS -->
       <link rel="stylesheet" href="css/font-awesome.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
    </head>
-   <!-- body -->
+
    <body class="main-layout">
-      <!-- loader  -->
-      <div class="loader_bg">
-         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      <!-- Elegant Indian Animated Preloader (No GIF, No Cyberpunk, No Gold) -->
+      <div class="loader_bg" id="siteLoader">
+         <div class="luxury_loader">
+            <div class="indian-loader-spinner">
+               <div class="spin-ring"></div>
+               <div class="center-bindi"></div>
+            </div>
+            <div class="loader_text">
+               <span class="brand_name">THILOTHANA</span>
+               <span class="brand_sub">Makeup Artist</span>
+            </div>
+         </div>
       </div>
       <!-- end loader -->
+
       <!-- header -->
       <header>
-         <!-- header inner -->
          <div class="header">
             <div class="container">
                <div class="row align-items-center">
@@ -110,9 +115,9 @@
             </div>
          </div>
       </header>
-      <!-- end header inner -->
       <!-- end header -->
 
+      <!-- Success Popup Modal -->
       <div id="popupOverlay">
          <div id="popupBox" class="fade-in">
             <div id="popupTitle">Success!</div>
@@ -121,47 +126,51 @@
       </div>
 
       <!-- Gallery Section -->
-      <div id="gallery" class="gallery">
+      <div id="gallery" class="gallery" style="padding-top: 130px;">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <h2> <img src="images/head.png" alt="#"/> Our Gallery</h2>
+                     <h2><img src="images/head.png" alt="#"/> Our Gallery</h2>
                      <p>Explore the stunning transformations and artistry in makeup created for our clients.</p>
                   </div>
                </div>
             </div>
-            
-            <!-- Gallery Grid with Nano Banana Images -->
+
+            <!-- Indian Bridal Gallery Grid -->
             <div class="row">
                <div class="col-md-4">
                   <div class="gallery_box">
-                     <img src="images/girl1.png" alt="Bridal Look" class="img-fluid">
+                     <img src="images/gallery/bridal-01.jpg" alt="Royal Muhurtham Bride" class="img-fluid">
                      <div class="overlay">
+                        <span class="tag">Bridal Look</span>
                         <p>Royal Muhurtham Bride</p>
                      </div>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="gallery_box">
-                     <img src="images/girl2.png" alt="Party Look" class="img-fluid">
+                     <img src="images/gallery/bridal-02.jpg" alt="Reception Look" class="img-fluid">
                      <div class="overlay">
+                        <span class="tag">Reception Look</span>
                         <p>Reception &amp; Party Glam</p>
                      </div>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="gallery_box">
-                     <img src="images/girl3.png" alt="Glass Skin Look" class="img-fluid">
+                     <img src="images/gallery/beauty-01.jpg" alt="Glass Skin Look" class="img-fluid">
                      <div class="overlay">
+                        <span class="tag">Glass Skin</span>
                         <p>Luminous 4K Glass Skin</p>
                      </div>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="gallery_box">
-                     <img src="images/gallery/bridal-02.jpg" alt="Contemporary Bride" class="img-fluid">
+                     <img src="images/gallery/beauty-02.jpg" alt="Contemporary Bride" class="img-fluid">
                      <div class="overlay">
+                        <span class="tag">Contemporary</span>
                         <p>Contemporary Pastel Bride</p>
                      </div>
                   </div>
@@ -170,6 +179,7 @@
                   <div class="gallery_box">
                      <img src="images/gallery/beauty-03.jpg" alt="Maternity Glow" class="img-fluid">
                      <div class="overlay">
+                        <span class="tag">Maternity</span>
                         <p>Natural Radiant Maternity Glow</p>
                      </div>
                   </div>
@@ -178,6 +188,7 @@
                   <div class="gallery_box">
                      <img src="images/gallery/beauty-04.jpg" alt="Editorial Beauty" class="img-fluid">
                      <div class="overlay">
+                        <span class="tag">Fashion Beauty</span>
                         <p>High-Definition Fashion Beauty</p>
                      </div>
                   </div>
@@ -186,6 +197,7 @@
                   <div class="gallery_box">
                      <img src="images/gallary/extra-01.jpg" alt="Hair Styling" class="img-fluid">
                      <div class="overlay">
+                        <span class="tag">Hair Styling</span>
                         <p>Traditional Poolajada Braided Hair</p>
                      </div>
                   </div>
@@ -194,14 +206,16 @@
                   <div class="gallery_box">
                      <img src="images/gallary/extra-02.jpg" alt="Saree Drape" class="img-fluid">
                      <div class="overlay">
+                        <span class="tag">Saree Draping</span>
                         <p>Modern Textured Updo &amp; Saree Drape</p>
                      </div>
                   </div>
                </div>
                <div class="col-md-4">
                   <div class="gallery_box">
-                     <img src="images/gallery/beauty-01.jpg" alt="Dewy Look" class="img-fluid">
+                     <img src="images/gallery/beauty-05.jpg" alt="Dewy Look" class="img-fluid">
                      <div class="overlay">
+                        <span class="tag">Dewy Glow</span>
                         <p>Soft Natural Dewy Look</p>
                      </div>
                   </div>
@@ -216,62 +230,64 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <h2> <img src="images/head.h.png" alt="#"/>BOOK THE <span class="white">DAY NOW</span></h2>
+                     <h2><img src="images/head.h.png" alt="#"/>BOOK THE <span class="white">DAY NOW</span></h2>
                   </div>
                </div>
             </div>
-            <div class="row">
+            <div class="row align-items-center">
                <div class="col-md-6">
-                  <form id="callbackRequest" class="main_form" onsubmit="handleGalleryCallbackSubmit(event)">
-                     <div class="row">
-                        <div class="col-md-12">
-                           <input id="galName" class="contactus" placeholder="Name" type="text" name="name" required>
+                  <div class="contact-card-box">
+                     <form id="callbackRequest" class="main_form" onsubmit="handleGalleryCallbackSubmit(event)">
+                        <div class="row">
+                           <div class="col-md-12">
+                              <input id="galName" class="contactus" placeholder="Name" type="text" name="name" required>
+                           </div>
+                           <div class="col-md-12">
+                              <input id="galPhone" class="contactus" placeholder="Phone Number" type="tel" name="phone" pattern="[0-9]{10}" required>
+                           </div>
+                           <div class="col-md-12">
+                              <select id="galCategory" class="contactus" name="category" required>
+                                 <option value="">Select Category</option>
+                                 <option value="Bridal MakeUp">Bridal MakeUp</option>
+                                 <option value="Puberty MakeUp">Puberty MakeUp</option>
+                                 <option value="Maternity MakeUp">Maternity MakeUp</option>
+                                 <option value="Baby Shower MakeUp">Baby Shower MakeUp</option>
+                                 <option value="Pro HD MakeUp">Pro HD MakeUp</option>
+                                 <option value="Engagement MakeUp">Engagement MakeUp</option>
+                                 <option value="Nature MakeUp">Nature MakeUp</option>
+                                 <option value="HD MakeUp">HD MakeUp</option>
+                                 <option value="Glass Skin MakeUp">Glass Skin MakeUp</option>
+                                 <option value="Smooky look MakeUp">Smooky look MakeUp</option>
+                                 <option value="Fashion MakeUp">Fashion MakeUp</option>
+                                 <option value="Eye MakeUp">Eye MakeUp</option>
+                                 <option value="Hair Styling">Hair Styling</option>
+                                 <option value="Others">Others</option>
+                              </select>
+                           </div>
+                           <div class="col-md-12">
+                              <input id="galAddress" class="contactus" placeholder="Address" type="text" name="address" required>
+                           </div>
+                           <div class="col-md-12">
+                              <textarea id="galDesc" class="textarea" placeholder="Description" name="description" required></textarea>
+                           </div>
+                           <div class="col-md-12">
+                              <button class="send_btn" type="submit">Send</button>
+                           </div>
                         </div>
-                        <div class="col-md-12">
-                           <input id="galPhone" class="contactus" placeholder="Phone Number" type="tel" name="phone" pattern="[0-9]{10}" required>
-                        </div>
-                        <div class="col-md-12">
-                           <select id="galCategory" class="contactus" name="category" required>
-                              <option value="">Select Category</option>
-                              <option value="Puberty MakeUp">Puberty MakeUp</option>
-                              <option value="Maternity MakeUp">Maternity MakeUp</option>
-                              <option value="Baby Shower MakeUp">Baby Shower MakeUp</option>
-                              <option value="Bridal MakeUp">Bridal MakeUp</option>
-                              <option value="Pro HD MakeUp">Pro HD MakeUp</option>
-                              <option value="Engagement MakeUp">Engagement MakeUp</option>
-                              <option value="Nature MakeUp">Nature MakeUp</option>
-                              <option value="HD MakeUp">HD MakeUp</option>
-                              <option value="Glass Skin MakeUp">Glass Skin MakeUp</option>
-                              <option value="Smooky look MakeUp">Smooky look MakeUp</option>
-                              <option value="Fashion MakeUp">Fashion MakeUp</option>
-                              <option value="Eye MakeUp">Eye MakeUp</option>
-                              <option value="Hair Styling">Hair Styling</option>
-                              <option value="Others">Others</option>
-                           </select>
-                        </div>
-                        <div class="col-md-12">
-                           <input id="galAddress" class="contactus" placeholder="Address" type="text" name="address" required>
-                        </div>
-                        <div class="col-md-12">
-                           <textarea id="galDesc" class="textarea" placeholder="Description" name="description" required></textarea>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                           <button class="send_btn" type="submit">Send</button>
-                        </div>
-                     </div>
-                  </form>
+                     </form>
+                  </div>
                </div>
 
-               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+               <div class="col-md-6 mt-4 mt-md-0">
                   <div class="map-responsive">
-                     <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="432" frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe>
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62668.61868472506!2d76.9616335!3d10.9383804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859a8cd4f2851%3A0xe10471b09b53f064!2sEachanari%2C%20Coimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Location Map"></iframe>
                   </div>
                </div>
             </div>
          </div>
       </div>
 
-      <!--  footer -->
+      <!-- Footer -->
       <footer id="footer" class="footer">
          <div class="container">
             <div class="row footer-content-row">
@@ -285,16 +301,16 @@
                         Professional &amp; luxury bridal makeup services tailored for weddings, receptions, celebrity events, and special occasions. Transforming dreams into radiant beauty.
                      </p>
                      <div class="footer-social">
-                        <a href="https://www.instagram.com/thilo__makeupartist?igsh=OGxuYXphMW81a3Zo" target="_blank" rel="noopener noreferrer" title="Instagram" aria-label="Instagram">
+                        <a href="https://www.instagram.com/thilo__makeupartist?igsh=OGxuYXphMW81a3Zo" target="_blank" rel="noopener noreferrer" title="Instagram">
                            <i class="fa fa-instagram"></i>
                         </a>
-                        <a href="https://wa.me/917695826978" target="_blank" rel="noopener noreferrer" title="WhatsApp" aria-label="WhatsApp">
+                        <a href="https://wa.me/917695826978" target="_blank" rel="noopener noreferrer" title="WhatsApp">
                            <i class="fa fa-whatsapp"></i>
                         </a>
-                        <a href="tel:+917695826978" title="Call Us" aria-label="Call Us">
+                        <a href="tel:+917695826978" title="Call Us">
                            <i class="fa fa-phone"></i>
                         </a>
-                        <a href="mailto:thilothanamakeupartist05@gmail.com" title="Email Us" aria-label="Email Us">
+                        <a href="mailto:thilothanamakeupartist05@gmail.com" title="Email Us">
                            <i class="fa fa-envelope"></i>
                         </a>
                      </div>
@@ -379,8 +395,13 @@
       <script src="js/db.js"></script>
       <script>
          window.addEventListener('load', function() {
-            var loader = document.querySelector('.loader_bg');
-            if (loader) loader.style.display = 'none';
+            var loader = document.getElementById('siteLoader');
+            if (loader) {
+               loader.classList.add('loader-hidden');
+               setTimeout(function() {
+                  loader.style.display = 'none';
+               }, 500);
+            }
          });
 
          function showSuccessPopup() {
@@ -413,99 +434,5 @@
             document.getElementById('callbackRequest').reset();
          }
       </script>
-
-      <style type="text/css">
-         #gallery {
-            padding: 120px 0 60px;
-            background-color: #f9f9f9;
-         }
-
-         #gallery .titlepage h2 {
-            font-size: 36px;
-            color: #333;
-            text-align: center;
-            margin-bottom: 10px;
-         }
-
-         #gallery .titlepage p {
-            font-size: 16px;
-            color: #777;
-            text-align: center;
-            margin-bottom: 30px;
-         }
-
-         .gallery_box {
-            position: relative;
-            overflow: hidden;
-            margin-bottom: 30px;
-         }
-
-         .gallery_box img {
-            width: 100%;
-            height: 280px;
-            object-fit: cover;
-            transition: transform 0.3s ease-in-out;
-            cursor: pointer;
-         }
-
-         .gallery_box:hover img {
-            transform: scale(1.1);
-            z-index: 10;
-            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
-         }
-
-         .gallery_box .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.6);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-         }
-
-         .gallery_box:hover .overlay {
-            opacity: 1;
-         }
-
-         .gallery_box .overlay p {
-            color: #fff;
-            font-size: 18px;
-            text-align: center;
-         }
-
-         #popupOverlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.6);
-            z-index: 99999;
-         }
-
-         #popupBox {
-            background: #fff;
-            color: #333;
-            width: 320px;
-            margin: 15% auto;
-            padding: 25px;
-            text-align: center;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-         }
-
-         #popupTitle {
-            font-size: 22px;
-            font-weight: bold;
-            color: #bc1939;
-            margin-bottom: 10px;
-         }
-      </style>
    </body>
 </html>
