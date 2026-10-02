@@ -14,7 +14,7 @@ The replacement photography in this folder was downloaded from Unsplash's public
 - `gallery/beauty-02.jpg`, `about_bg.jpg`, `mobile.jpg`: https://images.unsplash.com/photo-1512496015851-a90fb38ba796
 - `gallery/beauty-03.jpg`, `contact.jpg`, `contact-mobile.jpg`: https://images.unsplash.com/photo-1526045478516-99145907023c
 - `gallery/beauty-04.jpg`: https://images.unsplash.com/photo-1487412720507-e7ab37603c6f
-- `gallary/extra-01.jpg`: https://images.unsplash.com/photo-1496747611176-843222e1e57c
-- `gallary/extra-02.jpg`: https://images.unsplash.com/photo-1529139574466-a303027c1d8b
+- `gallery/extra-01.jpg`: https://images.unsplash.com/photo-1496747611176-843222e1e57c
+- `gallery/extra-02.jpg`: https://images.unsplash.com/photo-1529139574466-a303027c1d8b
 
 The template icon sprites under `css/` were downloaded from the jQuery UI, malihu-custom-scrollbar, and Owl Carousel public CDNs. The small logo and decorative assets are local branded placeholders sized to the original template slots.

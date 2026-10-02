@@ -119,7 +119,7 @@ const DEFAULT_DB = {
       category: "Hair Styling",
       price_estimate: "₹2,500 - ₹5,000",
       duration: "1.5 Hours",
-      image: "images/gallary/extra-01.jpg",
+      image: "images/gallery/extra-01.jpg",
       badge: "Styling",
       description: "Traditional South Indian poolajada braid decoration, modern messy buns, Hollywood waves, and pin-sharp saree pleating.",
       features: [
@@ -190,7 +190,7 @@ const DEFAULT_DB = {
       title: "Traditional Poolajada Braided Hair",
       category: "hair",
       category_name: "Hair & Styling",
-      image: "images/gallary/extra-01.jpg",
+      image: "images/gallery/extra-01.jpg",
       caption: "Intricately woven South Indian bridal braid ornamented with fresh blooms and antique gold billai.",
       is_ai_nano: false
     },
@@ -199,7 +199,7 @@ const DEFAULT_DB = {
       title: "Modern Textured Bun & Saree Drape",
       category: "hair",
       category_name: "Hair & Styling",
-      image: "images/gallary/extra-02.jpg",
+      image: "images/gallery/extra-02.jpg",
       caption: "Modern textured updo accessorized with pearls and crisp box-pleated Kanchipuram silk saree.",
       is_ai_nano: false
     }

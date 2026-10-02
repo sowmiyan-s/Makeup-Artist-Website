@@ -1,0 +1,378 @@
+/* ==========================================================================
+   Thilothana Makeup Artist - Admin Panel Stylesheet
+   ========================================================================== */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    background-color: #f7f5f4;
+    color: #333333;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header & Navigation Bar */
+.admin-header {
+    background-color: #bc1939;
+    color: #ffffff;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.admin-header h1,
+.admin-header h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.logout-btn {
+    background-color: #ffffff;
+    color: #bc1939;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logout-btn:hover {
+    background-color: #fff0f3;
+    transform: translateY(-1px);
+}
+
+/* Navigation Tabs */
+.nav-tabs {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 12px 16px;
+    gap: 12px;
+    border-bottom: 1px solid #e5ded9;
+}
+
+.nav-tabs button {
+    padding: 10px 22px;
+    border: 1px solid #e0d8d4;
+    background: #ffffff;
+    color: #555555;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.nav-tabs button:hover {
+    background-color: #fdf5f6;
+    color: #bc1939;
+}
+
+.nav-tabs button.active {
+    background: #bc1939;
+    color: #ffffff;
+    border-color: #bc1939;
+    box-shadow: 0 3px 8px rgba(188, 25, 57, 0.25);
+}
+
+/* Content Sections */
+.admin-main {
+    flex: 1;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-box {
+    display: none;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 24px;
+    margin-bottom: 24px;
+    border: 1px solid #ece7e4;
+}
+
+.section-box.active {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Filter Form */
+form.filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 24px;
+    padding: 16px;
+    background: #faf8f7;
+    border-radius: 8px;
+    border: 1px solid #ece6e2;
+}
+
+form.filter-form input[type="date"],
+form.filter-form select,
+form.filter-form input[type="text"] {
+    padding: 10px 14px;
+    border: 1px solid #d5cbc6;
+    border-radius: 6px;
+    font-size: 0.92rem;
+    flex: 1;
+    min-width: 180px;
+    background: #ffffff;
+    color: #333333;
+    transition: border-color 0.2s;
+}
+
+form.filter-form input:focus,
+form.filter-form select:focus {
+    outline: none;
+    border-color: #bc1939;
+    box-shadow: 0 0 0 3px rgba(188, 25, 57, 0.1);
+}
+
+button[type="submit"],
+button.action-btn {
+    background-color: #bc1939;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 0.92rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+button[type="submit"]:hover,
+button.action-btn:hover {
+    background-color: #9e142f;
+    transform: translateY(-1px);
+}
+
+/* Table Styles */
+.table-container {
+    overflow-x: auto;
+    border-radius: 8px;
+    border: 1px solid #e8e2de;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+th, td {
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #eee8e5;
+}
+
+th {
+    background-color: #bc1939;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+tr:nth-child(even) {
+    background-color: #faf8f7;
+}
+
+tr:hover {
+    background-color: #f5f0ee;
+}
+
+td a {
+    color: #bc1939;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+.btn-complete {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin-right: 6px;
+    transition: background 0.2s;
+}
+
+.btn-complete:hover {
+    background-color: #218838;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.82rem;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+/* Bottom Actions */
+.bottom-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 28px 0 16px;
+}
+
+.bottom-actions a {
+    text-decoration: none;
+}
+
+.bottom-actions button {
+    background-color: #211016;
+    color: #ffffff;
+    border: 1px solid #3c1e29;
+    border-radius: 6px;
+    padding: 11px 22px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.bottom-actions button:hover {
+    background-color: #bc1939;
+    border-color: #bc1939;
+    transform: translateY(-1px);
+}
+
+/* Database Management Tab */
+.db-actions-card {
+    background: #faf8f7;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #e8e2de;
+    margin-top: 16px;
+}
+
+.db-actions-card h3 {
+    margin-bottom: 12px;
+    color: #211016;
+}
+
+.db-btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+/* Footer */
+.admin-footer {
+    text-align: center;
+    padding: 20px 15px;
+    margin-top: auto;
+    background: #141212;
+    color: #8c827a;
+    font-size: 13px;
+    border-top: 2px solid #bc1939;
+}
+
+.admin-footer strong {
+    color: #e5ded7;
+}
+
+.admin-footer a {
+    color: #bc1939;
+    text-decoration: none;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .admin-header {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+        padding: 14px 16px;
+    }
+
+    .admin-header h1,
+    .admin-header h2 {
+        font-size: 1.25rem;
+    }
+
+    .nav-tabs {
+        flex-wrap: wrap;
+        padding: 8px;
+        gap: 6px;
+    }
+
+    .nav-tabs button {
+        flex: 1 1 calc(50% - 6px);
+        font-size: 0.85rem;
+        padding: 8px 10px;
+    }
+
+    form.filter-form {
+        flex-direction: column;
+        padding: 14px;
+    }
+
+    form.filter-form input[type="date"],
+    form.filter-form select,
+    form.filter-form input[type="text"],
+    form.filter-form button[type="submit"] {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .admin-main {
+        padding: 12px;
+    }
+
+    .section-box {
+        padding: 16px 12px;
+    }
+
+    .bottom-actions button {
+        width: 100%;
+    }
+}
