@@ -133,4 +133,17 @@
             });
         });
     });
+
+    // 6. Interactive FAQ Accordion Controller
+    window.toggleFaq = function (headerEl) {
+        var item = headerEl.parentElement;
+        var allItems = document.querySelectorAll('.faq_item');
+        allItems.forEach(function (i) {
+            if (i !== item) {
+                i.classList.remove('active');
+            }
+        });
+        item.classList.toggle('active');
+    };
+
 })();

@@ -1951,3 +1951,281 @@ ul.infometion li a:hover {
     border: 0;
     border-radius: 20px;
 }
+/* ==========================================================================
+   Professional Business Sections (Process, Trust Pillars, Brands, FAQ)
+   ========================================================================== */
+
+/* Process / Client Journey Section */
+.process_section {
+    padding: 85px 0 75px;
+    background: #ffffff;
+}
+
+.process_card {
+    background: #faf8f8;
+    border-radius: 18px;
+    padding: 34px 24px;
+    text-align: center;
+    border: 1px solid #ebdcd9;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+    transition: all 0.35s ease;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.process_card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #bc1939, #e84c68);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.process_card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 36px rgba(188, 25, 57, 0.12);
+    border-color: rgba(188, 25, 57, 0.3);
+    background: #ffffff;
+}
+
+.process_card:hover::after {
+    opacity: 1;
+}
+
+.process_step_num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #fff0f3;
+    color: #bc1939;
+    font-size: 18px;
+    font-weight: 800;
+    border: 2px solid rgba(188, 25, 57, 0.2);
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.process_card:hover .process_step_num {
+    background: #bc1939;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.process_card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #211016;
+    margin-bottom: 12px;
+    line-height: 26px;
+}
+
+.process_card p {
+    font-size: 14.5px;
+    color: #554449;
+    line-height: 23px;
+    margin: 0;
+}
+
+/* Why Us / Trust Pillars Section */
+.why_us_section {
+    padding: 85px 0 65px;
+    background: #faf8f8;
+}
+
+.pillar_card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px 24px;
+    border: 1px solid #ebdcd9;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+}
+
+.pillar_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(188, 25, 57, 0.1);
+    border-color: rgba(188, 25, 57, 0.25);
+}
+
+.pillar_icon_box {
+    width: 54px;
+    height: 54px;
+    min-width: 54px;
+    border-radius: 12px;
+    background: #fff0f3;
+    color: #bc1939;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(188, 25, 57, 0.15);
+}
+
+.pillar_card:hover .pillar_icon_box {
+    background: #bc1939;
+    color: #ffffff;
+}
+
+.pillar_content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #211016;
+    margin-bottom: 8px;
+    line-height: 24px;
+}
+
+.pillar_content p {
+    font-size: 14px;
+    color: #5d4f53;
+    line-height: 22px;
+    margin: 0;
+}
+
+/* Luxury Brands Transparency Bar */
+.brands_container {
+    margin-top: 45px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #ebdcd9;
+    text-align: center;
+}
+
+.brands_container h4 {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #8c767c;
+    margin-bottom: 20px;
+}
+
+.brand_pills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.brand_pill {
+    background: #faf8f8;
+    color: #211016;
+    font-size: 13.5px;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 30px;
+    border: 1px solid #e5d7d9;
+    transition: all 0.25s ease;
+}
+
+.brand_pill:hover {
+    background: #bc1939;
+    color: #ffffff;
+    border-color: #bc1939;
+    transform: translateY(-2px);
+}
+
+/* FAQ Accordion Section */
+.faq_section {
+    padding: 85px 0 75px;
+    background: #ffffff;
+}
+
+.faq_accordion {
+    max-width: 880px;
+    margin: 30px auto 0;
+}
+
+.faq_item {
+    background: #faf8f8;
+    border: 1px solid #ebdcd9;
+    border-radius: 14px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq_item.active {
+    border-color: #bc1939;
+    box-shadow: 0 6px 20px rgba(188, 25, 57, 0.08);
+}
+
+.faq_header {
+    padding: 20px 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    background: #faf8f8;
+    transition: background 0.2s;
+}
+
+.faq_header:hover {
+    background: #fff5f7;
+}
+
+.faq_header h4 {
+    font-size: 16.5px;
+    font-weight: 700;
+    color: #211016;
+    margin: 0;
+    line-height: 24px;
+    padding-right: 15px;
+}
+
+.faq_icon {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #ebdcd9;
+    color: #bc1939;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+.faq_item.active .faq_icon {
+    transform: rotate(180deg);
+    background: #bc1939;
+    color: #ffffff;
+    border-color: #bc1939;
+}
+
+.faq_body {
+    padding: 0 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+    background: #ffffff;
+}
+
+.faq_item.active .faq_body {
+    padding: 16px 24px 22px;
+    max-height: 300px;
+    border-top: 1px solid #f2e7e9;
+}
+
+.faq_body p {
+    font-size: 14.5px;
+    color: #554449;
+    line-height: 24px;
+    margin: 0;
+}
